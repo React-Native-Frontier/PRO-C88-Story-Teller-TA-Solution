@@ -80,6 +80,7 @@ export default class CreateStory extends Component {
 				description: this.state.description,
 				story: this.state.story,
 				moral: this.state.moral,
+				author: firebase.auth().currentUser.displayName,
 				created_on: d.toString(),
 				author_uid: userId,
 				likes: 0,
